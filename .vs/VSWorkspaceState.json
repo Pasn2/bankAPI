@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\bin",
+    "\\Controllers",
+    "\\Properties"
   ],
   "SelectedNode": "\\BankApi.sln",
   "PreviewInSolutionExplorer": false

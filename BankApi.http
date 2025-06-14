@@ -1,6 +1,6 @@
 @BankApi_HostAddress = http://localhost:5220
 
-GET {{BankApi_HostAddress}}/weatherforecast/
+GET {{BankApi_HostAddress}}/Users/
 Accept: application/json
-
+Content-Type: application/json
 ###
