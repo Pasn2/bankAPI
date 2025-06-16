@@ -13,7 +13,7 @@ namespace BankApi.Models
         public string email { get; set; } = String.Empty;
         public string login { get; set; } = String.Empty;
         public string password { get; set; } = String.Empty;
-
+        public BankAccount account = new BankAccount();
 
     }
 }

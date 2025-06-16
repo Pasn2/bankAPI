@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using api.Data;
+using BankApi.Models;
 using Microsoft.AspNetCore.Mvc;
 namespace BankApi.DTOS
 {
@@ -13,6 +14,7 @@ namespace BankApi.DTOS
         public string email { get; set; } = String.Empty;
         public string login { get; set; } = String.Empty;
         public string password { get; set; } = String.Empty;
+        public BankAccount account { get; set; }
     }
 }
 

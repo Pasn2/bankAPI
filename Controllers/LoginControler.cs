@@ -31,32 +31,61 @@ namespace BankApi.Controllers
 
 
         }
-        [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody]UserDTOS user)
+        public async Task<IActionResult> GetUserByLogin(string login)
         {
+            var user = await _context.users
+                .Include(u => u.account) // jeśli chcesz też konto bankowe
+                .FirstOrDefaultAsync(u => u.login == login);
+
+            if (user == null)
+                return NotFound("Nie znaleziono użytkownika");
+
+            return Ok(user);
+        }
+        public bool IsUserExist(string login)
+        {
+            var user = _context.users.FirstOrDefault(u => u.login == login);
+            return user != null;
+        }
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] RegisterDTO user)
+        {
+            if (IsUserExist(user.login))
+                return Unauthorized("Użytkownik już istnieje");
+
             var hashedPassword = BCrypt.Net.BCrypt.HashPassword(user.password);
 
             var newUser = new User
             {
                 email = user.email,
                 login = user.login,
-                password = hashedPassword
+                password = hashedPassword,
             };
 
-            _context.Add(newUser);
+            _context.users.Add(newUser);
+            await _context.SaveChangesAsync(); // teraz newUser.ID jest ustawione
+
+            var bankAccount = new BankAccount
+            {
+                UserId = newUser.ID,
+                balance = 0
+            };
+
+            _context.BankAccounts.Add(bankAccount);
             await _context.SaveChangesAsync();
+
             return Ok("Zarejestrowano");
         }
         [HttpPost("login")]
-        public IActionResult Login(UserDTOS login)
+        public IActionResult Login(LoginDTO login)
         {
             var user = _context.users.FirstOrDefault(u => u.login == login.login);
             if (user == null || !BCrypt.Net.BCrypt.Verify(login.password, user.password))
             {
                 return Unauthorized("Złe dane logowania");
             }
-
-                return Ok("Zalogowano");
-            }
+            return Ok("Zalogowano");
+        }
+       
     }
 }

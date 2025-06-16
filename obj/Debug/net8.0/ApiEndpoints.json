@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "BankApi.Controllers.LoginControler",
+    "Method": "GetAll",
+    "RelativePath": "BankApi/login",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankApi.Controllers.LoginControler",
+    "Method": "Login",
+    "RelativePath": "BankApi/login/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "BankApi.DTOS.UserDTOS",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankApi.Controllers.LoginControler",
+    "Method": "Register",
+    "RelativePath": "BankApi/login/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "BankApi.DTOS.UserDTOS",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

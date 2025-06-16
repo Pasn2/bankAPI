@@ -11,16 +11,16 @@ namespace BankApi.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "accounts",
+                name: "BankAccounts",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", nullable: false)
+                    AccountId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     balance = table.Column<double>(type: "float", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_accounts", x => x.ID);
+                    table.PrimaryKey("PK_BankAccounts", x => x.AccountId);
                 });
 
             migrationBuilder.CreateTable(
@@ -37,16 +37,44 @@ namespace BankApi.Migrations
                 {
                     table.PrimaryKey("PK_users", x => x.ID);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "Transactions",
+                columns: table => new
+                {
+                    tansactionId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    targetAccountId = table.Column<int>(type: "int", nullable: false),
+                    transactionValue = table.Column<int>(type: "int", nullable: false),
+                    BankAccountAccountId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Transactions", x => x.tansactionId);
+                    table.ForeignKey(
+                        name: "FK_Transactions_BankAccounts_BankAccountAccountId",
+                        column: x => x.BankAccountAccountId,
+                        principalTable: "BankAccounts",
+                        principalColumn: "AccountId");
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Transactions_BankAccountAccountId",
+                table: "Transactions",
+                column: "BankAccountAccountId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "accounts");
+                name: "Transactions");
 
             migrationBuilder.DropTable(
                 name: "users");
+
+            migrationBuilder.DropTable(
+                name: "BankAccounts");
         }
     }
 }
