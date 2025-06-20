@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "BankApi.Controllers.AccountController",
+    "Method": "GetAllAccount",
+    "RelativePath": "BankApi/account",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankApi.Controllers.AccountController",
+    "Method": "GetAccountById",
+    "RelativePath": "BankApi/account",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BankApi.Controllers.LoginControler",
     "Method": "GetAll",
     "RelativePath": "BankApi/login",
@@ -11,6 +37,48 @@
   },
   {
     "ContainingType": "BankApi.Controllers.LoginControler",
+    "Method": "GetUserByLogin",
+    "RelativePath": "BankApi/login",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankApi.Controllers.LoginControler",
+    "Method": "IsUserExist",
+    "RelativePath": "BankApi/login",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BankApi.Controllers.LoginControler",
     "Method": "Login",
     "RelativePath": "BankApi/login/login",
     "HttpMethod": "POST",
@@ -19,7 +87,7 @@
     "Parameters": [
       {
         "Name": "login",
-        "Type": "BankApi.DTOS.UserDTOS",
+        "Type": "BankApi.DTOS.LoginDTO",
         "IsRequired": true
       }
     ],
@@ -35,7 +103,7 @@
     "Parameters": [
       {
         "Name": "user",
-        "Type": "BankApi.DTOS.UserDTOS",
+        "Type": "BankApi.DTOS.RegisterDTO",
         "IsRequired": true
       }
     ],
