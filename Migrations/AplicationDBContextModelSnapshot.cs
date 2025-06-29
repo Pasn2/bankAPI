@@ -33,37 +33,41 @@ namespace BankApi.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.Property<double>("balance")
-                        .HasColumnType("float");
+                    b.Property<decimal>("balance")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("AccountId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("BankAccounts");
                 });
 
             modelBuilder.Entity("BankApi.Models.Transaction", b =>
                 {
-                    b.Property<int>("tansactionId")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("tansactionId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
-                    b.Property<int>("AccountId")
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ReceiverAccountId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("BankAccountAccountId")
+                    b.Property<int>("SenderAccountId")
                         .HasColumnType("int");
 
-                    b.Property<int>("targetAccountId")
-                        .HasColumnType("int");
+                    b.HasKey("ID");
 
-                    b.Property<int>("transactionValue")
-                        .HasColumnType("int");
+                    b.HasIndex("ReceiverAccountId");
 
-                    b.HasKey("tansactionId");
-
-                    b.HasIndex("BankAccountAccountId");
+                    b.HasIndex("SenderAccountId");
 
                     b.ToTable("Transactions");
                 });
@@ -93,16 +97,41 @@ namespace BankApi.Migrations
                     b.ToTable("users");
                 });
 
+            modelBuilder.Entity("BankApi.Models.BankAccount", b =>
+                {
+                    b.HasOne("BankApi.Models.User", "user")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("user");
+                });
+
             modelBuilder.Entity("BankApi.Models.Transaction", b =>
                 {
-                    b.HasOne("BankApi.Models.BankAccount", null)
-                        .WithMany("transactions")
-                        .HasForeignKey("BankAccountAccountId");
+                    b.HasOne("BankApi.Models.BankAccount", "ReceiverAccount")
+                        .WithMany("ReceivedTransactions")
+                        .HasForeignKey("ReceiverAccountId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("BankApi.Models.BankAccount", "SenderAccount")
+                        .WithMany("SentTransactions")
+                        .HasForeignKey("SenderAccountId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("ReceiverAccount");
+
+                    b.Navigation("SenderAccount");
                 });
 
             modelBuilder.Entity("BankApi.Models.BankAccount", b =>
                 {
-                    b.Navigation("transactions");
+                    b.Navigation("ReceivedTransactions");
+
+                    b.Navigation("SentTransactions");
                 });
 #pragma warning restore 612, 618
         }

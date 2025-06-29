@@ -5,11 +5,17 @@ namespace BankApi.Models
     public class Transaction
     {
         [Key]
-        public int tansactionId { get; set; }
-        public int AccountId { get; set; }
-        
-        public int targetAccountId { get; set; }
-        public string accountLogin { get; set; }
-        public int transactionValue { get; set; }
+        public int ID { get; set; }
+
+
+        public decimal Amount { get; set; }
+
+        public int SenderAccountId { get; set; }
+        public BankAccount SenderAccount { get; set; }
+
+        public int ReceiverAccountId { get; set; }
+        public BankAccount ReceiverAccount { get; set; }
+
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }
