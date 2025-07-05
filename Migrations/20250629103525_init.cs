@@ -80,12 +80,12 @@ namespace BankApi.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Transactions_ReceiverAccountId",
                 table: "Transactions",
-                column: "ReceiverAccountId");
+                column: "SendAccountId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Transactions_SenderAccountId",
                 table: "Transactions",
-                column: "SenderAccountId");
+                column: "ReciveAccountId");
         }
 
         /// <inheritdoc />

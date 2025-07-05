@@ -7,8 +7,8 @@ namespace BankApi.DTOS
     {
         [Key]
         public int ID { get; set; }     
-        public int SenderAccountId { get; set; }
-        public int ReceiverAccountId { get; set; }
+        public int ReciveAccountId { get; set; }
+        public int SendAccountId { get; set; }
         public decimal Amount { get; set; }
         
 

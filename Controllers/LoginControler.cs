@@ -54,7 +54,7 @@ namespace BankApi.Controllers
                 return Unauthorized("Użytkownik już istnieje");
 
             var hashedPassword = BCrypt.Net.BCrypt.HashPassword(user.password);
-
+            
             var newUser = new User
             {
                 email = user.email,

@@ -1,6 +1,20 @@
-﻿namespace BankApi.Mappers
+﻿using BankApi.DTOS;
+
+namespace BankApi.Mappers
 {
-    public class TransactionMapper
+    public static class TransactionMapper
     {
+        public static TransactionDTO toTransactionDTO(this TransactionDTO transactionModel)
+        {
+            return new TransactionDTO
+            {
+                ID = transactionModel.ID,
+                Amount = transactionModel.Amount,
+                CreatedAt = transactionModel.CreatedAt,
+                SendAccountId = transactionModel.SendAccountId,
+                ReciveAccountId = transactionModel.ReciveAccountId
+
+            };
+        }
     }
 }

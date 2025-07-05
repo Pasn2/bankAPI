@@ -26,6 +26,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BankApi.Controllers.AccountController",
+    "Method": "GetIdByEmail",
+    "RelativePath": "BankApi/account/{_email}/getemail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankApi.Controllers.AccountController",
+    "Method": "GetIdByLogin",
+    "RelativePath": "BankApi/account/{_login}/getlogin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_login",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BankApi.Controllers.LoginControler",
     "Method": "GetAll",
     "RelativePath": "BankApi/login",
@@ -104,6 +136,43 @@
       {
         "Name": "user",
         "Type": "BankApi.DTOS.RegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TransactionController",
+    "Method": "CreateTransaction",
+    "RelativePath": "BankApi/transaction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BankApi.DTOS.TransactionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TransactionController",
+    "Method": "GetTransactions",
+    "RelativePath": "BankApi/transaction/{accountId}/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_accounemail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "accountId",
+        "Type": "",
         "IsRequired": true
       }
     ],

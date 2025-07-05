@@ -3,48 +3,48 @@
   "WorkspaceRootPath": "C:\\Test\\Bank\\BankApi\\BankApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\controllers\\logincontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:controllers\\logincontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\models\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:models\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\bankapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:bankapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\dtos\\transactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:dtos\\transactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\data\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:data\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\mappers\\usermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:mappers\\usermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\data\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:data\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\mappers\\transactionmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,8 +55,12 @@
       "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\models\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:models\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A6964CF-FC4C-40FC-A15A-A837B9D8AF96}|BankApi.csproj|c:\\test\\bank\\bankapi\\bankapi\\bankapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -91,70 +95,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "BankApi.csproj",
+              "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\BankApi.csproj",
+              "RelativeDocumentMoniker": "BankApi.csproj",
+              "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\BankApi.csproj",
+              "RelativeToolTip": "BankApi.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-03T09:11:29.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "TransactionController.cs",
               "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\Controllers\\TransactionController.cs",
               "RelativeDocumentMoniker": "Controllers\\TransactionController.cs",
               "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\Controllers\\TransactionController.cs",
               "RelativeToolTip": "Controllers\\TransactionController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowB0AAAA3AAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowD4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T13:51:14.301Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwCMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T11:40:56.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginControler.cs",
-              "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\Controllers\\LoginControler.cs",
-              "RelativeDocumentMoniker": "Controllers\\LoginControler.cs",
-              "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\Controllers\\LoginControler.cs",
-              "RelativeToolTip": "Controllers\\LoginControler.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAIwE4AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T17:53:02.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BankAccount.cs",
-              "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\Models\\BankAccount.cs",
-              "RelativeDocumentMoniker": "Models\\BankAccount.cs",
-              "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\Models\\BankAccount.cs",
-              "RelativeToolTip": "Models\\BankAccount.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T18:25:10.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T17:50:56.136Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "UserDTOS.cs",
               "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\DTOS\\UserDTOS.cs",
               "RelativeDocumentMoniker": "DTOS\\UserDTOS.cs",
@@ -166,57 +131,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Transaction.cs",
               "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\Models\\Transaction.cs",
               "RelativeDocumentMoniker": "Models\\Transaction.cs",
               "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\Models\\Transaction.cs",
               "RelativeToolTip": "Models\\Transaction.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwA8AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T18:41:13.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T18:41:13.549Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RegisterDTO.cs",
-              "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\DTOS\\RegisterDTO.cs",
-              "RelativeDocumentMoniker": "DTOS\\RegisterDTO.cs",
-              "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\DTOS\\RegisterDTO.cs",
-              "RelativeToolTip": "DTOS\\RegisterDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T16:02:38.988Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "UserMapper.cs",
               "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\Mappers\\UserMapper.cs",
               "RelativeDocumentMoniker": "Mappers\\UserMapper.cs",
               "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\Mappers\\UserMapper.cs",
               "RelativeToolTip": "Mappers\\UserMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-14T17:51:02.313Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "TransactionDTO.cs",
               "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\DTOS\\TransactionDTO.cs",
               "RelativeDocumentMoniker": "DTOS\\TransactionDTO.cs",
               "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\DTOS\\TransactionDTO.cs",
               "RelativeToolTip": "DTOS\\TransactionDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T21:01:30.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-27T21:01:30.1Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AplicationDBContext.cs",
               "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\Data\\AplicationDBContext.cs",
               "RelativeDocumentMoniker": "Data\\AplicationDBContext.cs",
@@ -224,8 +175,7 @@
               "RelativeToolTip": "Data\\AplicationDBContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T17:52:47.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-14T17:52:47.414Z"
             },
             {
               "$type": "Document",
@@ -235,7 +185,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T12:57:23.66Z"
             },
@@ -247,13 +197,13 @@
               "RelativeDocumentMoniker": "Mappers\\TransactionMapper.cs",
               "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\Mappers\\TransactionMapper.cs",
               "RelativeToolTip": "Mappers\\TransactionMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-27T21:00:30.61Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\DTOS\\LoginDTO.cs",
               "RelativeDocumentMoniker": "DTOS\\LoginDTO.cs",
@@ -265,7 +215,67 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginControler.cs",
+              "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\Controllers\\LoginControler.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginControler.cs",
+              "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\Controllers\\LoginControler.cs",
+              "RelativeToolTip": "Controllers\\LoginControler.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAA1wDkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T17:53:02.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowDcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T11:40:56.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\DTOS\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "DTOS\\RegisterDTO.cs",
+              "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\DTOS\\RegisterDTO.cs",
+              "RelativeToolTip": "DTOS\\RegisterDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T16:02:38.988Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T17:50:56.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BankAccount.cs",
+              "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\Models\\BankAccount.cs",
+              "RelativeDocumentMoniker": "Models\\BankAccount.cs",
+              "ToolTip": "C:\\Test\\Bank\\BankApi\\BankApi\\Models\\BankAccount.cs",
+              "RelativeToolTip": "Models\\BankAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T18:25:10.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "BankApi.http",
               "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\BankApi.http",
               "RelativeDocumentMoniker": "BankApi.http",
@@ -277,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -289,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -301,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Test\\Bank\\BankApi\\BankApi\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",

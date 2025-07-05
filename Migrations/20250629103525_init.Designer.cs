@@ -60,17 +60,17 @@ namespace BankApi.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("ReceiverAccountId")
+                    b.Property<int>("SendAccountId")
                         .HasColumnType("int");
 
-                    b.Property<int>("SenderAccountId")
+                    b.Property<int>("ReciverAccountId")
                         .HasColumnType("int");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("ReceiverAccountId");
+                    b.HasIndex("SendAccountId");
 
-                    b.HasIndex("SenderAccountId");
+                    b.HasIndex("ReciverAccountId");
 
                     b.ToTable("Transactions");
                 });
@@ -115,13 +115,13 @@ namespace BankApi.Migrations
                 {
                     b.HasOne("BankApi.Models.BankAccount", "ReceiverAccount")
                         .WithMany("ReceivedTransactions")
-                        .HasForeignKey("ReceiverAccountId")
+                        .HasForeignKey("SendAccountId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BankApi.Models.BankAccount", "SenderAccount")
                         .WithMany("SentTransactions")
-                        .HasForeignKey("SenderAccountId")
+                        .HasForeignKey("ReciverAccountId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 

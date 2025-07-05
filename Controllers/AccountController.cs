@@ -29,6 +29,7 @@ namespace BankApi.Controllers
 
 
         }
+        [HttpGet("{_email}/getemail")]
         public async Task<IActionResult> GetIdByEmail(string _email)
         {
             if (string.IsNullOrWhiteSpace(_email))
@@ -41,22 +42,18 @@ namespace BankApi.Controllers
 
             return Ok(new { user.ID });
         }
-        [HttpGet("{accountId}/transactions")]
-        public async Task<IActionResult> GetTransactions(int accountId)
+        [HttpGet("{_login}/getlogin")]
+        public async Task<IActionResult> GetIdByLogin(string _login)
         {
-            var account = await _context.BankAccounts
-                .Include(a => a.SentTransactions)
-                .Include(a => a.ReceivedTransactions)
-                .FirstOrDefaultAsync(a => a.AccountId == accountId);
+            if (string.IsNullOrWhiteSpace(_login))
+                return BadRequest("Login is required.");
 
-            if (account == null)
-                return NotFound("Nie znaleziono konta.");
+            var user = await _context.users.FirstOrDefaultAsync(u => u.login == _login);
 
-            return Ok(new
-            {
-                sent = account.SentTransactions,
-                received = account.ReceivedTransactions
-            });
+            if (user == null)
+                return NotFound($"User with Login {_login} not found.");
+
+            return Ok(new { user.ID });
         }
 
     }
