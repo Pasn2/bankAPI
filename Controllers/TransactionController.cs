@@ -3,6 +3,7 @@ using BankApi.DTOS;
 using BankApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 
 [ApiController]
 [Route("BankApi/transaction")]
@@ -45,7 +46,15 @@ public class TransactionController : ControllerBase
             received
         });
     }
+    [HttpGet("{accountID}/getbalance")]
+    public async Task<IActionResult> GetBalance([FromRoute] int accountID)
+    {
+        var account = await _context.BankAccounts.FindAsync(accountID);
+        if (account == null)
+            return NotFound("Nie znaleziono konta.");
 
+        return Ok(new { balance = account.balance });
+    }
     [HttpPost("send")]
     public async Task<IActionResult> CreateTransaction([FromBody] TransactionDTO dto)
     {
@@ -79,4 +88,5 @@ public class TransactionController : ControllerBase
 
         return Ok("Transakcja zakończona sukcesem");
     }
+    
 }

@@ -22,10 +22,23 @@ namespace BankApi.Controllers
 
 
         }
-        public async Task<IActionResult> GetAccountById(int _id)
+        [HttpGet("{ID}/getaccount")]
+        public async Task<IActionResult> GetAccountById([FromRoute] int ID)
         {
-            var accounts = await _context.BankAccounts.ToListAsync<BankAccount>();
-            return Ok(accounts);
+            var account = await _context.BankAccounts.FindAsync(ID);
+            if (account == null)
+                return NotFound("Nie znaleziono konta o podanym ID.");
+            return Ok(account);
+
+
+        }
+        [HttpGet("{ID}/getID")]
+        public async Task<IActionResult> GetAccountID([FromRoute] int ID)
+        {
+            var account = await _context.BankAccounts.FindAsync(ID);
+            if (account == null)
+                return NotFound("Nie znaleziono konta o podanym ID.");
+            return Ok(new { id = account.AccountId});
 
 
         }
