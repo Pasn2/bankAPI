@@ -16,12 +16,12 @@ public class TransactionController : ControllerBase
         _context = context;
     }
     [HttpGet("{accountId}/get")]
-    public async Task<IActionResult> GetTransactions(string _accounemail)
+    public async Task<IActionResult> GetTransactions(int accountId)
     {
         var account = await _context.BankAccounts
-       .Include(a => a.SentTransactions)
-       .Include(a => a.ReceivedTransactions)
-       .FirstOrDefaultAsync(a => a.user.email == _accounemail);
+            .Include(a => a.SentTransactions)
+            .Include(a => a.ReceivedTransactions)
+            .FirstOrDefaultAsync(a => a.AccountId == accountId); // <-- kluczowa poprawka
 
         if (account == null)
             return NotFound("Nie znaleziono konta.");
@@ -30,21 +30,64 @@ public class TransactionController : ControllerBase
         {
             ID = t.ID,
             Amount = t.Amount,
-            CreatedAt = t.CreatedAt
+            SendAccountId = t.SenderAccountId,
+            ReciveAccountId = t.ReceiverAccountId,
+            CreatedAt = t.CreatedAt,
+             Descryption = t.Descryption
+
         });
 
         var received = account.ReceivedTransactions.Select(c => new TransactionDTO
         {
             ID = c.ID,
             Amount = c.Amount,
-            CreatedAt = c.CreatedAt
-        });
+            CreatedAt = c.CreatedAt,
+            Descryption = c.Descryption,
+            SendAccountId = c.SenderAccountId,
+            ReciveAccountId = c.ReceiverAccountId,
+        }) ;
 
         return Ok(new
         {
             sent,
             received
         });
+    }
+    [HttpGet("{accountID}/getRecived")]
+    public async Task<IActionResult> GetRecivedTransaction([FromRoute] int accountID)
+    {
+        var transactions = await _context.Transactions
+        .Where(t => t.ReceiverAccountId == accountID)
+        .Select(t => new TransactionDTO
+        {
+            ID = t.ID,
+            SendAccountId = t.SenderAccountId,
+            ReciveAccountId = t.ReceiverAccountId,
+            Amount = t.Amount,
+            CreatedAt = t.CreatedAt,
+            Descryption = t.Descryption
+        })
+        .ToListAsync();
+
+        return Ok(transactions);
+    }
+    [HttpGet("{accountID}/getSended")]
+    public async Task<IActionResult> GetSendedTransaction([FromRoute] int accountID)
+    {
+        var transactions = await _context.Transactions
+       .Where(t => t.SenderAccountId == accountID)
+       .Select(t => new TransactionDTO
+       {
+           ID = t.ID,
+           SendAccountId = t.SenderAccountId,
+           ReciveAccountId = t.ReceiverAccountId,
+           Amount = t.Amount,
+           CreatedAt = t.CreatedAt,
+           Descryption = t.Descryption
+       })
+       .ToListAsync();
+
+        return Ok(transactions);
     }
     [HttpGet("{accountID}/getbalance")]
     public async Task<IActionResult> GetBalance([FromRoute] int accountID)
@@ -80,6 +123,7 @@ public class TransactionController : ControllerBase
             SenderAccountId = dto.SendAccountId,
             ReceiverAccountId = dto.ReciveAccountId,
             Amount = dto.Amount,
+            Descryption = dto.Descryption,
             CreatedAt = DateTime.UtcNow
         };
 

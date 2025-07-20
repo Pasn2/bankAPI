@@ -9,6 +9,7 @@ namespace BankApi.Models
 
 
         public decimal Amount { get; set; }
+        public string Descryption { get; set; }
 
         public int SenderAccountId { get; set; }
         public BankAccount SenderAccount { get; set; }

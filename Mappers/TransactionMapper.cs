@@ -12,7 +12,9 @@ namespace BankApi.Mappers
                 Amount = transactionModel.Amount,
                 CreatedAt = transactionModel.CreatedAt,
                 SendAccountId = transactionModel.SendAccountId,
-                ReciveAccountId = transactionModel.ReciveAccountId
+                ReciveAccountId = transactionModel.ReciveAccountId,
+                Descryption = transactionModel.Descryption,
+                
 
             };
         }
