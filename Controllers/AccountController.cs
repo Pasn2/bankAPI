@@ -42,7 +42,7 @@ namespace BankApi.Controllers
 
 
         }
-        [HttpGet("{_email}/getemail")]
+        [HttpGet("{_email}/getidemail")]
         public async Task<IActionResult> GetIdByEmail(string _email)
         {
             if (string.IsNullOrWhiteSpace(_email))
@@ -54,6 +54,15 @@ namespace BankApi.Controllers
                 return NotFound($"User with email {_email} not found.");
 
             return Ok(new { user.ID });
+        }
+        [HttpGet("{id}/getemail")]
+        public async Task<IActionResult> GetEmailByID([FromRoute] int id)
+        {
+            var user = await _context.users.FindAsync(id);
+            if (user == null)
+                return NotFound($"User with ID {id} not found.");
+
+            return Ok(new { user.email });
         }
         [HttpGet("{_login}/getlogin")]
         public async Task<IActionResult> GetIdByLogin(string _login)
